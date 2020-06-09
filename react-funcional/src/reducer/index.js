@@ -1,6 +1,6 @@
-import React, { useState, } from 'react';
+import React, { useState } from 'react';
 
-import useStore from '/somaReducer'
+import useStore from './somaReducer'
 
 
 function ReducerHook() {
@@ -14,11 +14,24 @@ function ReducerHook() {
   const somar = () => {
     const numeroInt = parseInt(numero)
     const segNumeroInt = parseInt(segundoNumero)
-
+    
+    dispatch({
+      type: 'SOMA',
+      payload: numeroInt + segNumeroInt
+    })
   }
 
+  const subtrair = () => {
+    const numeroInt = parseInt(numero)
+    const segNumeroInt = parseInt(segundoNumero)
+    
+    dispatch({
+      type: 'SUBTRACAO',
+      payload: numeroInt - segNumeroInt
+    })
+  }
  
-
+      
   return (
    
     <div>
@@ -34,9 +47,11 @@ Número 1:<br />
 
 
       <button onClick={somar}>Somar</button> <br />
+
+      <button onClick={subtrair}>Subtrair</button> <br />
       
       Resultado:<br />
-      <input type="text" value={resultado} /><br />
+      <input type="text" value={store.resultado} readOnly /><br />
     </div>
   );
 }

@@ -4,9 +4,10 @@ const STATE_INICIAL = {
     resultado: ''
 }
 
-const somaReducer = ( state, STATE_INICIAL, action )=> {
+const somaReducer = ( state = STATE_INICIAL, action )=> {
     switch( action.type ){
-        case 'SOMA' :
+        case 'SUBTRACAO':    
+        case 'SOMA':
             return {...state, resultado: action.payload}
         default:
             return state;
