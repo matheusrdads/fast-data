@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "acorn": "7.1.1",
     "bootswatch": "^4.4.1",
-    "elliptic": "^6.5.3",
+    "elliptic": "^6.5.4",
     "http-proxy": "^1.18.1",
     "minimist": "^1.2.5",
     "node-forge": "^0.10.0",
