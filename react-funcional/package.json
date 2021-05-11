@@ -9,7 +9,7 @@
     "acorn": "^8.0.1",
     "elliptic": "^6.5.3",
     "http-proxy": "^1.18.1",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "node-forge": "^0.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
