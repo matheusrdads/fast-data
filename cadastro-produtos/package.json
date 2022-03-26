@@ -10,7 +10,7 @@
     "bootswatch": "^4.4.1",
     "elliptic": "^6.5.3",
     "http-proxy": "^1.18.1",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "node-forge": "^0.10.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
